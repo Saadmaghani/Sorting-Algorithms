@@ -12,13 +12,13 @@ class Insertion{
 
 	static void sort(ArrayList<Double> A){
 		for(int i=1; i<A.size(); i++){
-		int j=i;
-		while(j>0 &&  A.get(j) < A.get(j-1)){ //in ascending order. replace < with > for descending
-			double t = A.get(j);
-			A.set(j, A.get(j-1));
-			A.set(j-1,t);
-			j--;
+			int j=i;
+			while(j>0 &&  A.get(j) < A.get(j-1)){ //in ascending order. replace < with > for descending
+				double t = A.get(j);
+				A.set(j, A.get(j-1));
+				A.set(j-1,t);
+				j--;
+			}
 		}
-	}
 	}
 }
