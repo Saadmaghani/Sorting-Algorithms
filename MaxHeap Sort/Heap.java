@@ -11,7 +11,7 @@ class Heap{
 		for(int i=0; i<n; System.out.print(A.get(i++) +" "));
 	}
 
-	void sort(ArrayList<Double> A){ //sort from s to end-1
+	void sort(ArrayList<Double> A){ 
 		offlineInsert(A);
 		for(int i=A.size()-1; i>=0;i--){
 			A.set(i, extractMax());
